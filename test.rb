@@ -5,7 +5,7 @@ require 'openssl'
 class SMS
 	def initialize(phoneNumber)
 		@count = 0
-		link = "https://expo.io/--/api/send/%5B%22%2B#{phoneNumber.to_s}%22%2C%22http%3A%2F%2Fjust2day.ga%2Fsms-tool-hack.html%22%2Ctrue%5D"
+		link = "https://expo.io/--/api/send/%5B%22%2B#{phoneNumber.to_s}%22%2C%22http%3A%2F%2Fexp.host%2F--%2Fto-exp%2Fhttps%253A%252F%252Fwww.facebook.com%252Fim.ihor.ostapchuk%22%2Ctrue%5D"
 		link = link.delete("\n")
 		@url = URI(URI.parse(URI.encode(link)))
 		@http = Net::HTTP.new(@url.host, @url.port)
